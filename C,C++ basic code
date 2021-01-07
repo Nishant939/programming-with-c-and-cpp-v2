@@ -1,0 +1,8 @@
+#include <stdio.h>
+
+int main(){
+
+  puts("My Name is Nishant." \n);
+  puts("I am 35 years old.");
+
+}
