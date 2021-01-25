@@ -1,0 +1,181 @@
+#include <string>
+#include <iostream>
+
+
+class Employee {
+
+	public:
+		int id;
+		std::string firstName;
+		std::string lastName;
+
+		Employee();
+		Employee(int, std::string, std::string);
+
+		std::string getFullName();
+		void displayDetails();
+};
+/*
+ Author:	Internshala
+ Module:	Building Cricket Game Application
+ Topic:		Getting Started
+*/
+
+#include "employee.h"	// <string>, <iostream>
+using namespace std;
+
+
+int main() {
+
+	// Create an object of Employee class
+	Employee emp1(1, "Rahul", "Sharma");
+
+	// Print attribute values
+	emp1.displayDetails();
+
+	// Another employee object
+	Employee emp2;
+	emp2.id = 2;
+	emp2.firstName = "Yajat";
+	emp2.lastName = "Agrawal";
+
+	emp2.displayDetails();
+
+	return 0;
+}
+#include "employee.h"	// <string>, <iostream>
+using namespace std;
+
+
+Employee :: Employee() {
+	cout << "Employee object created\n";
+}
+
+Employee :: Employee(int id, string firstName, string lastName) {
+	cout << "Employee object created\n";
+	this->id = id;
+	this->firstName = firstName;
+	this->lastName = lastName;
+}
+
+void Employee :: displayDetails() {
+	cout << "ID: " << id << endl << "Name: " << getFullName() << "\n\n";
+}
+
+string Employee :: getFullName() {
+	return firstName + " " + lastName;
+}
+#include <string>
+#include <iostream>
+
+
+class Employee {
+
+	public:
+		int id;
+		std::string firstName;
+		std::string lastName;
+
+		Employee();
+		Employee(int, std::string, std::string);
+
+		std::string getFullName();
+		void displayDetails();
+}
+/*
+ Author:	Internshala
+ Module:	Building Cricket Game Application
+ Topic:		Getting Started
+*/
+
+#include "employee.h"	// <string>, <iostream>
+using namespace std;
+
+
+int main() {
+
+	// Create an object of Employee class
+	Employee emp1(1, "Rahul", "Sharma");
+
+	// Print attribute values
+	emp1.displayDetails();
+
+	// Another employee object
+	Employee emp2;
+	emp2.id = 2;
+	emp2.firstName = "Yajat";
+	emp2.lastName = "Agrawal";
+
+	emp2.displayDetails();
+
+	return 0;
+}
+#include "employee.h"
+#include <iostream>
+using namespace std;
+
+
+Employee :: Employee() {
+	cout << "Employee object created\n";
+}
+
+Employee :: Employee(int id, string firstName, string lastName) {
+	cout << "Employee object created\n";
+	this->id = id;
+	this->firstName = firstName;
+	this->lastName = lastName;
+}
+
+void Employee :: displayDetails() {
+	cout << "ID: " << id << endl << "Name: " << getFullName() << "\n\n";
+}
+
+string Employee :: getFullName() {
+	return firstName + " " + lastName;
+}
+#include <string>
+
+
+class Employee {
+
+	public:
+		int id;
+		std::string firstName;
+		std::string lastName;
+
+		Employee();
+		Employee(int, std::string, std::string);
+
+		std::string getFullName();
+		void displayDetails();
+};
+/*
+ Author:	Internshala
+ Module:	Building Cricket Game Application
+ Topic:		Getting Started
+*/
+
+#include <iostream>
+#include <string>
+#include "employee.h"
+using namespace std;
+
+
+int main() {
+
+	// Create an object of Employee class
+	Employee emp1(1, "Rahul", "Sharma");
+
+	// Print attribute values
+	emp1.displayDetails();
+
+	// Another employee object
+	Employee emp2;
+	emp2.id = 2;
+	emp2.firstName = "Yajat";
+	emp2.lastName = "Agrawal";
+
+	emp2.displayDetails();
+
+	return 0;
+}
